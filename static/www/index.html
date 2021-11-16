@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <link href="jdrp.css" rel="stylesheet" type="text/css">
+  <link href="dist/rpgui.css" rel="stylesheet" type="text/css">
+  <title>JDRP</title>
+</head>
+
+<body id="background">
+
+  <div id="logo_jdrp"></div>
+
+  <div class="rpgui-content">
+
+
+    <div class="rpgui-container framed attributes">
+      <label>Health:</label>
+      <div class="rpgui-progress red"></div>
+      <label>XP:</label>
+      <div class="rpgui-progress" id="xp_bar"></div>
+    </div>
+
+    <div class="rpgui-container framed profile">
+      <h1 style="display:inline;">Name: ikoajwaedfhdgfh <div class="rpgui-container framed c_picture"> </div>
+      </h1>
+      <p>toto</p>
+      <p>toto</p>
+      <p>toto</p>
+      <p>toto</p>
+    </div>
+
+    <div id="mySidepanel" class="rpgui-container framed sidepanel close">
+      <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+      <button id="dicebtn" class="rpgui-button" type="button">
+        <p>Dice</p>
+      </button>
+    </div>
+
+    <button id="openbtn" class="rpgui-button" type="button">
+      <p>Tools</p>
+    </button>
+
+    <div class="rpgui-container framed rpgui-draggable" id="notes"
+      style="position: fixed;  right: 0;  top:265px; width:625px; height:60vh">
+      <h1>Notes</h1>
+      <hr>
+      <textarea name="text" id="text" cols="10" rows="50" style="height: 75%;"></textarea>
+    </div>
+
+    <div class="rpgui-container framed display-none" id="caracter">
+      <h1>Profile</h1>
+      <hr>
+      <h2>Equipment</h2>
+      <div style="float:left; display: block;">
+
+        <div style="text-align:center;">
+          <div class="rpgui-icon helmet-slot drag"></div>
+        </div>
+        <div style="text-align:center;">
+          <div class="rpgui-icon glove-slot drag"></div>
+          <div class="rpgui-icon armor-slot drag"></div>
+          <div class="rpgui-icon wrists-slot drag"></div>
+        </div>
+        <div style="text-align:center;">
+          <div class="rpgui-icon belt-slot drag"></div>
+        </div>
+        <div style="text-align:center;">
+          <div class="rpgui-icon shoes-slot drag"></div>
+        </div>
+      </div>
+
+      <div style="position:absolute; top:55%">
+
+        <div style="text-align:center;">
+          <div class="rpgui-icon ring-slot drag"></div>
+          <div class="rpgui-icon magic-slot drag"></div>
+          <div class="rpgui-icon weapon-slot drag"></div>
+        </div>
+
+        <div style="text-align:center;">
+          <div class="rpgui-icon ring-slot drag"></div>
+          <div class="rpgui-icon potion-slot drag"></div>
+          <div class="rpgui-icon shield-slot drag"></div>
+        </div>
+
+      </div>
+
+      <div style="position:fixed; width:60vh; left: 28vh;">
+        <div class="tab">
+          <button class="rpgui-button tab-item" id="stats_tab">
+            <p>Stats</p>
+          </button>
+          <button class="rpgui-button tab-item" id="effects_tab">
+            <p>Effects</p>
+          </button>
+
+        </div>
+
+        <div id="stats_content" class="tabcontent">
+
+          <p>damage: <span id="min-damage"></span> - <span id="max-damage">10</span></p>
+          <p>defense: <span id="defense"></span></p>
+        </div>
+
+        <div id="effects_content" class="tabcontent">
+          <h3>Test2</h3>
+          <p>TEst</p>
+        </div>
+      </div>
+
+      <div style="position: absolute; bottom: 0px; width:96%;">
+        <!-- <hr> -->
+        <h2>Stats</h2>
+        <div style="text-align:left; width:auto; position:left; display: inline;">
+          <p> Strengh: 80 <span style="float : right;">Dexterity: 80 </span> </p>
+          <p> Luck: 80 <span style="float : right;">Willpower: 80 </span> </p>
+          <p> Endurance: 80 <span style="float : right;">Charism: 80 </span> </p>
+          <p> Perception: 80 <span style="float : right;">Education: 80 </span> </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rpgui-container framed display-none rpgui-draggable" id="map">
+    </div>
+
+    <div class="rpgui-container framed-golden display-none " id="bag">
+      <h1>Bag</h1>
+      <hr>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+      <div class="rpgui-icon empty-slot drag"></div>
+
+    </div>
+
+    <div class="rpgui-container framed" style="position: absolute; bottom: 0px; right: 0px;">
+      <button class="rpgui-button" type="button" id="caracter_button"
+        style="transform: scaleX(0.4); margin-right: -90px;">
+        <div style="transform: scaleX(1.4) scaleY(0.7);" class="rpgui-icon sword"></div>
+      </button>
+      <button class="rpgui-button" type="button" id="bag_button" style="transform: scaleX(0.4); margin-right: -90px;">
+        <div style="transform: scaleX(1.4) scaleY(0.7);" class="rpgui-icon sword"></div>
+      </button>
+      <button class="rpgui-button" type="button" id="map_button" style="transform: scaleX(0.4);">
+        <div style="transform: scaleX(1.4) scaleY(0.7);" class="rpgui-icon sword"></div>
+      </button>
+    </div>
+  </div>
+
+  </div>
+  <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  <script src="./bootstrap.js"></script>
+  <script src="dist/rpgui.js"></script>
+</body>
+
+</html>

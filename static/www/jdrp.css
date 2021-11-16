@@ -1,0 +1,231 @@
+#background {
+    background-image: url("./img/noisy-texture-200x200-o5-d19-c-8a6244-t0.png");
+    overflow: hidden;
+}
+
+#logo_jdrp {
+    /* all: initial; */
+    background-image: url("./img/fav.png");
+    background-repeat: no-repeat !important;
+    /* background-attachment: fixed; */
+    background-size: contain;
+    opacity: 0.4;
+    width: 100vh;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 150% !important;
+}
+
+.attributes {
+    display: inline-block;
+    max-width: 25%;
+    width: 25%;
+    max-height: 200px;
+    height: 200px;
+    /* box-shadow: 10px 5px 5px gray; */
+}
+
+.profile {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    max-height: 200px;
+    height: 200px;
+}
+
+.display {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.visibility {
+    visibility: visible;
+}
+
+.visibility-none {
+    visibility: hidden;
+}
+
+
+
+#map {
+    position: absolute;
+    background-image: url('./img/map/Tds4.jpg') !important;
+    background-repeat: no-repeat !important;
+    width: 700px;
+    height: 550px;
+    background-size: 700px !important;
+}
+
+#caracter {
+    position: absolute;
+    width: 700px;
+    height: 79vh;
+}
+
+#bag {
+    position: absolute;
+    right: 0px;
+    width: 700px;
+    height: 550px;
+}
+
+div.display_inline, .display_inline p {
+    display: inline;
+}
+
+.c_picture {
+    background-image: url(https://via.placeholder.com/150) !important;
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+/* The sidepanel menu */
+
+.sidepanel {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    z-index: 110000000000000000000000000000000000000000000000000000000 !important;
+    /* Stay on top */
+    top: 200px;
+    /* right: -250px; */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    font-size: 36px;
+    /* margin-left: 50px; */
+}
+
+.open {
+    right: 0px;
+}
+
+.close {
+    right: -250px;
+}
+
+.rpgui-icon.belt-slot {
+    background-image: url("./dist/img/icons/belt-slot.png");
+}
+
+.rpgui-icon.glove-slot {
+    background-image: url("./dist/img/icons/glove-slot.png");
+}
+
+.rpgui-icon.wrists-slot {
+    background-image: url("./dist/img/icons/wrists-slot.png");
+}
+
+#dicebtn {
+    float: right;
+}
+
+#openbtn {
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+
+.over {
+    border: 3px dotted #666;
+  }
+
+  .grabbing * {
+    cursor: grabbing;
+}
+
+ /* Style the tab */
+ .tab {
+    overflow: hidden;
+    position: absolute;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+  }
+  
+   .tab button {
+    /* float: left; */
+    /* padding: 14px 16px; */
+    transition: 0.3s;
+  }
+  
+  .tabcontent {
+    display: none;
+    width:68%;
+    max-height: 370px;
+    margin:auto;
+    margin-left: 0px;
+    top:10%;
+    margin-top: 66px;
+    /* border: 1px solid #ccc; */
+    overflow: auto;
+  }
+
+
+   /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    width: auto;
+    /* background-color: #555; */
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    /* border-radius: 6px; */
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 100;
+    /* bottom: 125%; */
+    /* left: 50%; */
+    /* margin-left: -60px; */
+
+    top: -5px;
+    left: 110%;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+
+  }
+  
+  /* Tooltip arrow
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  } */
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  } 

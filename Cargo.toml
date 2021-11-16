@@ -1,0 +1,28 @@
+[package]
+name = "jdrp"
+version = "0.1.0"
+authors = ["Guillaume <guillaume@grytics.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+static-cond = "0.2.1"
+ws = "0.8.1"
+rocket = "0.4.1"
+rocket_contrib = "0.4.2"
+rocket_cors = "0.5.2"
+diesel = { version = "1.4.5", features = ["sqlite", "chrono", "numeric"] }
+dotenv = "0.9.0"
+serde_json = "1.0.48"
+serde = { version = "1.0", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+bcrypt = "0.8"
+rand = "0.7.3"
+syslog = "^4.0"
+log = "0.4.11"
+strum = { version = "0.19", features = ["derive"] }
+strum_macros = "0.19"
+glob = "0.3.0"
+jsonwebtoken = "7"
+config ="0.10"
